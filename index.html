@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanfantara — Terus Bertumbuh, Membuka Usaha Baru</title>
+  <meta name="description" content="Sanfantara adalah keluarga usaha kecil yang terus bertumbuh dan membuka usaha baru.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#beranda" class="brand"><img src="assets/logo.svg" alt="" width="36" height="36"><span>Sanfantara</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav class="menu" id="menu">
+      <a href="#tentang">Tentang</a>
+      <a href="#usaha">Unit Usaha</a>
+      <a href="#perjalanan">Perjalanan</a>
+      <a href="#mitra">Kemitraan</a>
+      <a href="#kontak" class="btn btn-sm">Hubungi Kami</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- BERANDA -->
+  <section class="hero" id="beranda">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <p class="eyebrow">Keluarga usaha kecil</p>
+        <h1>Terus bertumbuh,<br><em>membuka usaha baru.</em></h1>
+        <p class="lead">Berawal dari les privat di rumah untuk anak TK, SD, dan SMP, Sanfantara terus bercabang: fotokopi &amp; cetak foto, desain banner, dan kini menyiapkan peternakan.</p>
+        <div class="hero-cta">
+          <a href="#usaha" class="btn">Lihat Unit Usaha</a>
+          <a href="#mitra" class="btn btn-ghost">Ajak Kerja Sama</a>
+        </div>
+        <dl class="stats">
+          <div><dt id="statJalan">0</dt><dd>usaha berjalan</dd></div>
+          <div><dt id="statSegera">0</dt><dd>tunas disiapkan</dd></div>
+          <div><dt>1</dt><dd>nama, satu semangat</dd></div>
+        </dl>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 440" class="tree">
+          <path class="trunk" d="M200 430 V250"/>
+          <path class="br b1" d="M200 340 C150 330 120 300 110 260"/>
+          <path class="br b2" d="M200 300 C255 290 285 255 292 215"/>
+          <path class="br b3" d="M200 250 C165 230 150 190 152 150"/>
+          <path class="br b4" d="M200 250 V110"/>
+          <path class="br b5" d="M200 200 C240 185 262 150 266 112"/>
+          <circle class="node n1" cx="110" cy="256" r="16"/>
+          <circle class="node n2" cx="292" cy="211" r="16"/>
+          <circle class="node n3" cx="152" cy="146" r="16"/>
+          <circle class="node n4" cx="200" cy="96" r="20"/>
+          <circle class="node seed n5" cx="266" cy="104" r="12"/>
+          <path class="ground" d="M60 430 H340"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="section" id="tentang">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Arti nama</p>
+        <h2>Nama yang menjadi janji untuk terus tumbuh.</h2>
+      </div>
+      <div class="prose">
+        <p><strong>Sanfantara</strong> lahir dari satu tekad: <em>terus bertumbuh dan membuka usaha baru</em>. Kami tidak ingin berhenti di satu usaha. Setiap usaha yang berjalan baik menjadi akar bagi usaha berikutnya.</p>
+        <p>Karena itu Sanfantara bukan hanya satu toko atau satu produk, melainkan rumah bagi beberapa usaha kecil yang saling menguatkan, berbagi pengalaman, pelanggan, dan semangat.</p>
+      </div>
+    </div>
+    <div class="wrap values">
+      <article class="value">
+        <span class="v-num">01</span>
+        <h3>Bertumbuh</h3>
+        <p>Mulai dari kecil, belajar dari setiap langkah, dan memperbaiki diri tanpa henti.</p>
+      </article>
+      <article class="value">
+        <span class="v-num">02</span>
+        <h3>Membuka</h3>
+        <p>Berani membuka usaha baru dan peluang baru, untuk kami dan orang-orang di sekitar.</p>
+      </article>
+      <article class="value">
+        <span class="v-num">03</span>
+        <h3>Menguatkan</h3>
+        <p>Setiap usaha saling menopang, sehingga yang baru lahir tidak tumbuh sendirian.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- UNIT USAHA -->
+  <section class="section alt" id="usaha">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Unit usaha</p>
+        <h2>Usaha di bawah Sanfantara.</h2>
+        <p class="lead">Setiap usaha punya cerita sendiri, tetapi tumbuh dari akar yang sama.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Saring unit usaha">
+        <button class="chip on" data-f="semua">Semua</button>
+        <button class="chip" data-f="berjalan">Sudah berjalan</button>
+        <button class="chip" data-f="segera">Segera hadir</button>
+      </div>
+      <div class="units" id="units"></div>
+    </div>
+  </section>
+
+  <!-- PERJALANAN -->
+  <section class="section" id="perjalanan">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Perjalanan</p>
+        <h2>Dari satu tunas menjadi kebun usaha.</h2>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <!-- KEMITRAAN -->
+  <section class="section dark" id="mitra">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Kemitraan</p>
+        <h2>Tumbuh bersama kami.</h2>
+        <p class="lead">Kami terbuka untuk pemasok, investor kecil, pemilik tempat, dan siapa pun yang ingin membuka usaha baru bersama Sanfantara.</p>
+        <a href="#kontak" class="btn btn-light">Diskusikan Ide Anda</a>
+      </div>
+      <ul class="mitra-list">
+        <li><b>Pemasok &amp; produsen lokal</b><span>Bahan baku dan produk untuk unit-unit usaha kami.</span></li>
+        <li><b>Mitra modal</b><span>Ikut menanam di usaha baru dengan pembagian yang jelas.</span></li>
+        <li><b>Pemilik lokasi</b><span>Tempat strategis untuk cabang atau usaha berikutnya.</span></li>
+        <li><b>Calon pengelola</b><span>Punya ide usaha? Kami bantu menumbuhkannya.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="section" id="kontak">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Hubungi kami</p>
+        <h2>Mari mulai percakapan.</h2>
+        <p class="lead">Tanya soal unit usaha, kerja sama, atau sekadar berkenalan. Kami senang mendengar dari Anda.</p>
+        <ul class="contact" id="contact"></ul>
+      </div>
+      <form class="form" id="form">
+        <label>Nama<input name="nama" required autocomplete="name"></label>
+        <label>Keperluan
+          <select name="perlu">
+            <option>Daftar les privat (TK/SD/SMP)</option>
+            <option>Fotokopi / cetak foto</option>
+            <option>Pesan desain banner</option>
+            <option>Kerja sama / kemitraan</option>
+            <option>Menawarkan lokasi</option>
+            <option>Lainnya</option>
+          </select>
+        </label>
+        <label>Pesan<textarea name="pesan" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+        <p class="note">Pesan akan dibuka di WhatsApp, siap Anda kirim.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a href="#beranda" class="brand"><img src="assets/logo.svg" alt="" width="30" height="30"><span>Sanfantara</span></a>
+    <p>Terus bertumbuh, membuka usaha baru.</p>
+    <p class="muted">© <span id="year"></span> Sanfantara</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

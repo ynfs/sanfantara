@@ -1,0 +1,13 @@
+# Login & cache Cloudflare Wrangler - JANGAN di-commit
+.wrangler/
+.wrangler-auth/
+**/.wrangler/
+**/.wrangler-auth/
+.dev.vars
+.env*
+node_modules/
+__pycache__/
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
